@@ -98,7 +98,7 @@ def test_incorrect_arguments():
     ],
 )
 def test_resizer_preserves_float_precision(dtype, expected_dtype):
-    """Check resizer preserved float32 and promotes proper dtype output."""
+    """Test Resizer preserved float32 and promotes proper dtype output."""
     X = [
         np.array([[0, 1, 2, 3]], dtype=dtype),
         np.array([[0, 2, 4, 6, 8]], dtype=dtype),
